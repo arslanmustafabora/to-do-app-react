@@ -48,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>MBA's TO-DO LIST</h1>
+        <h1>TO-DO LIST</h1>
       </header>
       <Form todos={todos} setTodos={setTodos} inputText={inputText} setStatus={setStatus} setInputText={setInputText} />
       <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos} />

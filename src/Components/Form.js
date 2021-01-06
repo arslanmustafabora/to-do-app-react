@@ -17,10 +17,12 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
   }
   return (
     <form>
+      <div className="shadow">
       <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">
-        <i className="fas fa-plus-square"></i>
+        <i className="bx bx-plus"></i>
       </button>
+      </div>
       <div className="select">
         <select onChange={statusHandler} name="todos" className="filter-todo">
           <option value="all">All</option>
